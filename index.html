@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 핫딜</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0f0f0f;
+      color: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+      min-height: 100vh;
+      padding-bottom: 48px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 28px 20px 24px;
+      text-align: center;
+      border-bottom: 1px solid #2a2a3e;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header h1 { font-size: 20px; font-weight: 800; }
+    .header p { font-size: 12px; color: #888; margin-top: 4px; }
+
+    .day-section {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 20px 14px 0;
+    }
+
+    .day-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ff6b00;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .day-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #2a2a2a;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .card {
+      display: flex;
+      background: #1c1c1c;
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #2a2a2a;
+    }
+
+    .card-img {
+      position: relative;
+      width: 110px;
+      min-width: 110px;
+      height: 110px;
+      background: #252525;
+      flex-shrink: 0;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: #2a2a2a;
+    }
+
+    .rank {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .card-body {
+      padding: 13px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 6px;
+    }
+
+    .cta {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ff6b00;
+    }
+
+    .notice {
+      max-width: 480px;
+      margin: 28px auto 0;
+      padding: 0 16px;
+      font-size: 10px;
+      color: #444;
+      line-height: 1.6;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>오늘의 핫딜</h1>
+    <p>매일 오전 9시 업데이트</p>
+  </div>
+
+  <div class="day-section" id="2026-04-09">
+    <div class="day-label">4월 9일</div>
+    <div class="cards">
+      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8700921701&itemId=25266495058&vendorItemId=92262276451&traceid=V0-143-d5d65e0be9d71e6d" target="_blank" rel="noopener noreferrer sponsored">
+        <div class="card-img">
+          <img src="https://img5c.coupangcdn.com/image/retail/images/2025/04/07/16/7/a3f574df-8125-482f-b30c-171dd071a3d3.png" alt="" loading="lazy">
+          <span class="rank">#1</span>
+        </div>
+        <div class="card-body">
+          <p class="name">펩시 제로슈거 라임향 제로카페인 무라벨</p>
+          <p class="price">15,210원</p>
+          <p class="cta">지금 확인하기 →</p>
+        </div>
+      </a>
+      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=9447140712&itemId=21684599869&vendorItemId=70039618766&traceid=V0-143-b6960b4faa6e68b5" target="_blank" rel="noopener noreferrer sponsored">
+        <div class="card-img">
+          <img src="https://static.coupangcdn.com/image/retail/images/11146136162397-0ea92952-7c58-48eb-95b4-85db2c84bb66.jpg" alt="" loading="lazy">
+          <span class="rank">#2</span>
+        </div>
+        <div class="card-body">
+          <p class="name">농심 안성탕면 125g</p>
+          <p class="price">13,980원</p>
+          <p class="cta">지금 확인하기 →</p>
+        </div>
+      </a>
+      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=4798201469&itemId=6156553987&vendorItemId=73452758215&traceid=V0-143-89f962041a22a7de" target="_blank" rel="noopener noreferrer sponsored">
+        <div class="card-img">
+          <img src="https://image12.coupangcdn.com/image/retail/images/793963852126454-1e39fb64-39c2-4f5d-97fb-0221213f4905.jpg" alt="" loading="lazy">
+          <span class="rank">#3</span>
+        </div>
+        <div class="card-body">
+          <p class="name">고래사어묵 생생한 야채 사각어묵</p>
+          <p class="price">9,000원</p>
+          <p class="cta">지금 확인하기 →</p>
+        </div>
+      </a>
+      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6395389697&itemId=12107900018&vendorItemId=3086574774&traceid=V0-143-3775459cecf51ee4" target="_blank" rel="noopener noreferrer sponsored">
+        <div class="card-img">
+          <img src="https://image9.coupangcdn.com/image/vendor_inventory/4553/1b3252124dc55ad0a529351865657d2d415e0dd73b9e35c2c91498554b1e.jpg" alt="" loading="lazy">
+          <span class="rank">#4</span>
+        </div>
+        <div class="card-body">
+          <p class="name">나우푸드 아연 50mg</p>
+          <p class="price">15,150원</p>
+          <p class="cta">지금 확인하기 →</p>
+        </div>
+      </a>
+      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8404056929&itemId=16917531739&vendorItemId=84095447509&traceid=V0-143-5028fabc707ba77e" target="_blank" rel="noopener noreferrer sponsored">
+        <div class="card-img">
+          <img src="https://image6.coupangcdn.com/image/vendor_inventory/image_audit/advertiser/1751439896523/31049934-aa17-422d-a514-eb8532f4175a.jpg" alt="" loading="lazy">
+          <span class="rank">#5</span>
+        </div>
+        <div class="card-body">
+          <p class="name">라로슈포제 NEW 시카플라스트밤 B5+ 100ml x 2p + 토너 50ml + 밤 3ml x 2p 세트</p>
+          <p class="price">71,840원</p>
+          <p class="cta">지금 확인하기 →</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <p class="notice">이 페이지의 링크는 파트너스 활동의 일환으로, 클릭 및 구매 시 일정액의 수수료를 제공받을 수 있습니다.</p>
+</body>
+</html>
