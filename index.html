@@ -51,18 +51,21 @@
     .search-input:focus { border-color: #ff6b00; }
 
     .date-select {
-      background: #0f0f1a;
+      appearance: none;
+      -webkit-appearance: none;
+      background: #0f0f1a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
       border: 1px solid #2a2a3e;
       border-radius: 8px;
-      padding: 8px 10px;
+      padding: 8px 30px 8px 12px;
       font-size: 13px;
       color: #f0f0f0;
       outline: none;
       cursor: pointer;
       flex-shrink: 0;
+      transition: border-color 0.15s;
     }
 
-    .date-select:focus { border-color: #ff6b00; }
+    .date-select:focus, .date-select:hover { border-color: #ff6b00; }
 
     .day-section {
       max-width: 480px;
