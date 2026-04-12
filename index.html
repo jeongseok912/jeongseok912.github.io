@@ -17,7 +17,7 @@
 
     .header {
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      padding: 28px 20px 24px;
+      padding: 20px 20px 14px;
       text-align: center;
       border-bottom: 1px solid #2a2a3e;
       position: sticky;
@@ -28,11 +28,49 @@
     .header h1 { font-size: 20px; font-weight: 800; }
     .header p { font-size: 12px; color: #888; margin-top: 4px; }
 
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      max-width: 480px;
+      margin: 12px auto 0;
+      padding: 0 4px;
+    }
+
+    .search-input {
+      flex: 1;
+      background: #0f0f1a;
+      border: 1px solid #2a2a3e;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: #f0f0f0;
+      outline: none;
+    }
+
+    .search-input::placeholder { color: #555; }
+    .search-input:focus { border-color: #ff6b00; }
+
+    .date-select {
+      background: #0f0f1a;
+      border: 1px solid #2a2a3e;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      color: #f0f0f0;
+      outline: none;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .date-select:focus { border-color: #ff6b00; }
+
     .day-section {
       max-width: 480px;
       margin: 0 auto;
       padding: 20px 14px 0;
     }
+
+    .day-section.hidden { display: none; }
 
     .day-label {
       font-size: 13px;
@@ -67,6 +105,8 @@
       color: inherit;
       border: 1px solid #2a2a2a;
     }
+
+    .card.hidden { display: none; }
 
     .card-img {
       position: relative;
@@ -142,12 +182,33 @@
       text-align: center;
       border-bottom: 1px solid #1e1e1e;
     }
+
+    .no-results {
+      max-width: 480px;
+      margin: 40px auto;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>오늘의 핫딜</h1>
     <p>매일 저녁 8시 업데이트</p>
+    <div class="filter-bar">
+      <input class="search-input" id="searchInput" type="text" placeholder="상품명 검색..." autocomplete="off">
+      <select class="date-select" id="dateSelect">
+        <option value="">전체 날짜</option>
+      <option value="2026-04-10">4월 10일</option>
+      <option value="2026-04-09">4월 9일</option>
+      <option value="2026-04-07">4월 7일</option>
+      <option value="2026-04-06">4월 6일</option>
+      <option value="2026-04-05">4월 5일</option>
+      <option value="2026-04-04">4월 4일</option>
+      </select>
+    </div>
   </div>
   <p class="notice">이 포스팅은 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
 
@@ -472,5 +533,41 @@
       </a>
     </div>
   </div>
+
+  <p class="no-results" id="noResults">검색 결과가 없습니다.</p>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const dateSelect = document.getElementById('dateSelect');
+    const noResults = document.getElementById('noResults');
+
+    function applyFilter() {
+      const keyword = searchInput.value.trim().toLowerCase();
+      const dateVal = dateSelect.value;
+      let anyVisible = false;
+
+      document.querySelectorAll('.day-section').forEach(section => {
+        const sectionDate = section.id;
+        const dateMatch = !dateVal || sectionDate === dateVal;
+
+        let sectionHasVisible = false;
+        section.querySelectorAll('.card').forEach(card => {
+          const name = card.querySelector('.name').textContent.toLowerCase();
+          const nameMatch = !keyword || name.includes(keyword);
+          const show = dateMatch && nameMatch;
+          card.classList.toggle('hidden', !show);
+          if (show) sectionHasVisible = true;
+        });
+
+        section.classList.toggle('hidden', !sectionHasVisible);
+        if (sectionHasVisible) anyVisible = true;
+      });
+
+      noResults.style.display = anyVisible ? 'none' : 'block';
+    }
+
+    searchInput.addEventListener('input', applyFilter);
+    dateSelect.addEventListener('change', applyFilter);
+  </script>
 </body>
 </html>
