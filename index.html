@@ -50,7 +50,7 @@
     .search-input::placeholder { color: #555; }
     .search-input:focus { border-color: #ff6b00; }
 
-    .date-select {
+    .date-input {
       background: #0f0f1a;
       border: 1px solid #2a2a3e;
       border-radius: 8px;
@@ -60,9 +60,11 @@
       outline: none;
       cursor: pointer;
       flex-shrink: 0;
+      width: 130px;
+      color-scheme: dark;
     }
 
-    .date-select:focus { border-color: #ff6b00; }
+    .date-input:focus { border-color: #ff6b00; }
 
     .day-section {
       max-width: 480px;
@@ -180,7 +182,6 @@
       color: #888;
       line-height: 1.6;
       text-align: center;
-      border-bottom: 1px solid #1e1e1e;
     }
 
     .no-results {
@@ -199,15 +200,7 @@
     <p>매일 저녁 8시 업데이트</p>
     <div class="filter-bar">
       <input class="search-input" id="searchInput" type="text" placeholder="상품명 검색..." autocomplete="off">
-      <select class="date-select" id="dateSelect">
-        <option value="">전체 날짜</option>
-      <option value="2026-04-10">4월 10일</option>
-      <option value="2026-04-09">4월 9일</option>
-      <option value="2026-04-07">4월 7일</option>
-      <option value="2026-04-06">4월 6일</option>
-      <option value="2026-04-05">4월 5일</option>
-      <option value="2026-04-04">4월 4일</option>
-      </select>
+      <input class="date-input" id="dateInput" type="date" min="2026-04-04" max="2026-04-10">
     </div>
   </div>
   <p class="notice">이 포스팅은 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
@@ -538,12 +531,12 @@
 
   <script>
     const searchInput = document.getElementById('searchInput');
-    const dateSelect = document.getElementById('dateSelect');
+    const dateInput = document.getElementById('dateInput');
     const noResults = document.getElementById('noResults');
 
     function applyFilter() {
       const keyword = searchInput.value.trim().toLowerCase();
-      const dateVal = dateSelect.value;
+      const dateVal = dateInput.value;
       let anyVisible = false;
 
       document.querySelectorAll('.day-section').forEach(section => {
@@ -567,7 +560,7 @@
     }
 
     searchInput.addEventListener('input', applyFilter);
-    dateSelect.addEventListener('change', applyFilter);
+    dateInput.addEventListener('change', applyFilter);
   </script>
 </body>
 </html>
