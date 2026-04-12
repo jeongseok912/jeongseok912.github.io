@@ -50,22 +50,84 @@
     .search-input::placeholder { color: #555; }
     .search-input:focus { border-color: #ff6b00; }
 
-    .date-select {
-      appearance: none;
-      -webkit-appearance: none;
-      background: #0f0f1a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+    /* 커스텀 드롭다운 */
+    .dd-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .dd-trigger {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #0f0f1a;
       border: 1px solid #2a2a3e;
       border-radius: 8px;
-      padding: 8px 30px 8px 12px;
+      padding: 8px 12px;
       font-size: 13px;
       color: #f0f0f0;
-      outline: none;
       cursor: pointer;
-      flex-shrink: 0;
+      white-space: nowrap;
+      user-select: none;
       transition: border-color 0.15s;
     }
 
-    .date-select:focus, .date-select:hover { border-color: #ff6b00; }
+    .dd-trigger:hover, .dd-wrap.open .dd-trigger {
+      border-color: #ff6b00;
+    }
+
+    .dd-chevron {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .dd-wrap.open .dd-chevron {
+      transform: rotate(180deg);
+    }
+
+    .dd-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 120px;
+      background: #1a1a2a;
+      border: 1px solid #2a2a3e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      z-index: 100;
+    }
+
+    .dd-wrap.open .dd-menu {
+      display: block;
+    }
+
+    .dd-item {
+      list-style: none;
+      padding: 10px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      color: #ccc;
+      transition: background 0.1s, color 0.1s;
+    }
+
+    .dd-item:hover {
+      background: #252535;
+      color: #fff;
+    }
+
+    .dd-item.selected {
+      color: #ff6b00;
+      font-weight: 700;
+    }
+
+    .dd-item-all {
+      border-bottom: 1px solid #2a2a3e;
+      color: #888;
+    }
 
     .day-section {
       max-width: 480px;
@@ -201,15 +263,23 @@
     <p>매일 저녁 8시 업데이트</p>
     <div class="filter-bar">
       <input class="search-input" id="searchInput" type="text" placeholder="상품명 검색..." autocomplete="off">
-      <select class="date-select" id="dateSelect">
-        <option value="">전체 날짜</option>
-      <option value="2026-04-10">4월 10일</option>
-      <option value="2026-04-09">4월 9일</option>
-      <option value="2026-04-07">4월 7일</option>
-      <option value="2026-04-06">4월 6일</option>
-      <option value="2026-04-05">4월 5일</option>
-      <option value="2026-04-04">4월 4일</option>
-      </select>
+      <div class="dd-wrap" id="ddWrap">
+        <div class="dd-trigger" id="ddTrigger">
+          <span id="ddLabel">전체 날짜</span>
+          <svg class="dd-chevron" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4l4 4 4-4" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <ul class="dd-menu" id="ddMenu">
+          <li class="dd-item dd-item-all selected" data-value="">전체 날짜</li>
+      <li class="dd-item" data-value="2026-04-10">4월 10일</li>
+      <li class="dd-item" data-value="2026-04-09">4월 9일</li>
+      <li class="dd-item" data-value="2026-04-07">4월 7일</li>
+      <li class="dd-item" data-value="2026-04-06">4월 6일</li>
+      <li class="dd-item" data-value="2026-04-05">4월 5일</li>
+      <li class="dd-item" data-value="2026-04-04">4월 4일</li>
+        </ul>
+      </div>
     </div>
   </div>
   <p class="notice">이 포스팅은 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
@@ -540,27 +610,47 @@
 
   <script>
     const searchInput = document.getElementById('searchInput');
-    const dateSelect = document.getElementById('dateSelect');
+    const ddWrap = document.getElementById('ddWrap');
+    const ddTrigger = document.getElementById('ddTrigger');
+    const ddLabel = document.getElementById('ddLabel');
+    const ddMenu = document.getElementById('ddMenu');
     const noResults = document.getElementById('noResults');
+    let selectedDate = '';
+
+    // 드롭다운 토글
+    ddTrigger.addEventListener('click', e => {
+      e.stopPropagation();
+      ddWrap.classList.toggle('open');
+    });
+
+    // 바깥 클릭 시 닫기
+    document.addEventListener('click', () => ddWrap.classList.remove('open'));
+
+    // 항목 선택
+    ddMenu.addEventListener('click', e => {
+      const item = e.target.closest('.dd-item');
+      if (!item) return;
+      selectedDate = item.dataset.value;
+      ddLabel.textContent = item.textContent;
+      ddMenu.querySelectorAll('.dd-item').forEach(el => el.classList.remove('selected'));
+      item.classList.add('selected');
+      ddWrap.classList.remove('open');
+      applyFilter();
+    });
 
     function applyFilter() {
       const keyword = searchInput.value.trim().toLowerCase();
-      const dateVal = dateSelect.value;
       let anyVisible = false;
 
       document.querySelectorAll('.day-section').forEach(section => {
-        const sectionDate = section.id;
-        const dateMatch = !dateVal || sectionDate === dateVal;
-
+        const dateMatch = !selectedDate || section.id === selectedDate;
         let sectionHasVisible = false;
         section.querySelectorAll('.card').forEach(card => {
           const name = card.querySelector('.name').textContent.toLowerCase();
-          const nameMatch = !keyword || name.includes(keyword);
-          const show = dateMatch && nameMatch;
+          const show = dateMatch && (!keyword || name.includes(keyword));
           card.classList.toggle('hidden', !show);
           if (show) sectionHasVisible = true;
         });
-
         section.classList.toggle('hidden', !sectionHasVisible);
         if (sectionHasVisible) anyVisible = true;
       });
@@ -569,7 +659,6 @@
     }
 
     searchInput.addEventListener('input', applyFilter);
-    dateSelect.addEventListener('change', applyFilter);
   </script>
 </body>
 </html>
