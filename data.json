@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-13",
+    "label": "4월 13일",
+    "products": [
+      {
+        "name": "깨끗한나라 순수 시그니처 천연펄프 3겹 롤화장지",
+        "price": "15,840원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6570687310&itemId=17553901185&vendorItemId=76365551329&traceid=V0-143-bcbb48c13b8cbee8",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6570687310&itemId=17553901185&vendorItemId=76365551329&traceid=V0-143-bcbb48c13b8cbee8",
+        "image_url": "https://image13.coupangcdn.com/image/retail/images/100331567406296-fdc28fdd-a68f-415e-bb71-b5d79cf89c32.jpg"
+      },
+      {
+        "name": "[로켓프레시] 팜앤푸드 꼬리 자른 생새우살 61~70입 (냉동)",
+        "price": "15,980원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7647979111&itemId=20341505900&vendorItemId=87426298491&traceid=V0-143-eb841e42699b0056",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7647979111&itemId=20341505900&vendorItemId=87426298491&traceid=V0-143-eb841e42699b0056",
+        "image_url": "https://image15.coupangcdn.com/image/retail/images/1871988488973561-67485205-e071-44da-addb-4d8df6f36795.jpg"
+      },
+      {
+        "name": "세브란스에이투 전용목장 단백우유",
+        "price": "21,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7660544404&itemId=20407720989&vendorItemId=87489860248&traceid=V0-143-5966f030a5364314",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7660544404&itemId=20407720989&vendorItemId=87489860248&traceid=V0-143-5966f030a5364314",
+        "image_url": "https://image12.coupangcdn.com/image/retail/images/76770692332221-21d75e51-edcd-4f76-bd76-29d964121ed5.jpg"
+      },
+      {
+        "name": "마이밀 뉴프로틴 오리지널 드링크",
+        "price": "55,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7621201792&itemId=20206113370&vendorItemId=86016262833&traceid=V0-143-0af21b1c879bff2f",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7621201792&itemId=20206113370&vendorItemId=86016262833&traceid=V0-143-0af21b1c879bff2f",
+        "image_url": "https://img5a.coupangcdn.com/image/retail/images/43954471874375-f93ab182-0d58-4c4b-92fb-751ff7f07b24.jpg"
+      },
+      {
+        "name": "에어보나 공업용 대형 메탈 선풍기",
+        "price": "47,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8643295552&itemId=25085499429&vendorItemId=92089323113&traceid=V0-143-99c61238a7097a7b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8643295552&itemId=25085499429&vendorItemId=92089323113&traceid=V0-143-99c61238a7097a7b",
+        "image_url": "https://image14.coupangcdn.com/image/retail/images/2025/03/12/11/1/0b9480f0-fe9c-4e61-a1b8-68224919830d.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-10",
     "label": "4월 10일",
     "products": [
