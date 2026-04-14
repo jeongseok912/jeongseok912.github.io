@@ -50,7 +50,6 @@
     .search-input::placeholder { color: #555; }
     .search-input:focus { border-color: #ff6b00; }
 
-    /* 커스텀 드롭다운 */
     .dd-wrap {
       position: relative;
       flex-shrink: 0;
@@ -93,10 +92,11 @@
       top: calc(100% + 6px);
       right: 0;
       min-width: 120px;
+      max-height: 280px;
+      overflow-y: auto;
       background: #1a1a2a;
       border: 1px solid #2a2a3e;
       border-radius: 10px;
-      overflow: hidden;
       box-shadow: 0 8px 24px rgba(0,0,0,0.5);
       z-index: 100;
     }
@@ -255,11 +255,66 @@
       font-size: 14px;
       display: none;
     }
+
+    .skeleton-section {
+      max-width: 480px;
+      margin: 20px auto 0;
+      padding: 0 14px;
+    }
+
+    .skeleton-label {
+      height: 16px;
+      width: 80px;
+      background: #2a2a2a;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    .skeleton-card {
+      display: flex;
+      background: #1c1c1c;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+      margin-bottom: 10px;
+      height: 110px;
+    }
+
+    .skeleton-img {
+      width: 110px;
+      min-width: 110px;
+      background: #2a2a2a;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    .skeleton-body {
+      flex: 1;
+      padding: 13px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .skeleton-line {
+      height: 13px;
+      background: #2a2a2a;
+      border-radius: 4px;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    .skeleton-line.short { width: 60%; }
+    .skeleton-line.shorter { width: 40%; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>오늘의 핫딜</h1>
+    <h1 id="pageTitle">오늘의 핫딜</h1>
     <p>매일 저녁 8시 업데이트</p>
     <div class="filter-bar">
       <input class="search-input" id="searchInput" type="text" placeholder="상품명 검색..." autocomplete="off">
@@ -272,438 +327,94 @@
         </div>
         <ul class="dd-menu" id="ddMenu">
           <li class="dd-item dd-item-all selected" data-value="">전체 날짜</li>
-      <li class="dd-item" data-value="2026-04-13">4월 13일</li>
-      <li class="dd-item" data-value="2026-04-10">4월 10일</li>
-      <li class="dd-item" data-value="2026-04-09">4월 9일</li>
-      <li class="dd-item" data-value="2026-04-07">4월 7일</li>
-      <li class="dd-item" data-value="2026-04-06">4월 6일</li>
-      <li class="dd-item" data-value="2026-04-05">4월 5일</li>
-      <li class="dd-item" data-value="2026-04-04">4월 4일</li>
         </ul>
       </div>
     </div>
   </div>
   <p class="notice">이 포스팅은 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
 
-  <div class="day-section" id="2026-04-13">
-    <div class="day-label">4월 13일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6570687310&itemId=17553901185&vendorItemId=76365551329&traceid=V0-143-bcbb48c13b8cbee8" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image13.coupangcdn.com/image/retail/images/100331567406296-fdc28fdd-a68f-415e-bb71-b5d79cf89c32.jpg" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">깨끗한나라 순수 시그니처 천연펄프 3겹 롤화장지</p>
-          <p class="price">15,840원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7647979111&itemId=20341505900&vendorItemId=87426298491&traceid=V0-143-eb841e42699b0056" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image15.coupangcdn.com/image/retail/images/1871988488973561-67485205-e071-44da-addb-4d8df6f36795.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">[로켓프레시] 팜앤푸드 꼬리 자른 생새우살 61~70입 (냉동)</p>
-          <p class="price">15,980원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7660544404&itemId=20407720989&vendorItemId=87489860248&traceid=V0-143-5966f030a5364314" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image12.coupangcdn.com/image/retail/images/76770692332221-21d75e51-edcd-4f76-bd76-29d964121ed5.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">세브란스에이투 전용목장 단백우유</p>
-          <p class="price">21,900원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7621201792&itemId=20206113370&vendorItemId=86016262833&traceid=V0-143-0af21b1c879bff2f" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img5a.coupangcdn.com/image/retail/images/43954471874375-f93ab182-0d58-4c4b-92fb-751ff7f07b24.jpg" alt="" loading="lazy">
-          <span class="rank">#4</span>
-        </div>
-        <div class="card-body">
-          <p class="name">마이밀 뉴프로틴 오리지널 드링크</p>
-          <p class="price">55,000원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8643295552&itemId=25085499429&vendorItemId=92089323113&traceid=V0-143-99c61238a7097a7b" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image14.coupangcdn.com/image/retail/images/2025/03/12/11/1/0b9480f0-fe9c-4e61-a1b8-68224919830d.jpg" alt="" loading="lazy">
-          <span class="rank">#5</span>
-        </div>
-        <div class="card-body">
-          <p class="name">에어보나 공업용 대형 메탈 선풍기</p>
-          <p class="price">47,900원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-10">
-    <div class="day-label">4월 10일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8700921701&itemId=25266495058&vendorItemId=92262276451&traceid=V0-143-d5d65e0be9d71e6d" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image9.coupangcdn.com/image/retail/images/2025/04/07/16/7/a3f574df-8125-482f-b30c-171dd071a3d3.png" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">펩시 제로슈거 라임향 제로카페인 무라벨</p>
-          <p class="price">15,210원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=9447140712&itemId=21684599869&vendorItemId=70039618766&traceid=V0-143-b6960b4faa6e68b5" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image5.coupangcdn.com/image/retail/images/11146136162397-0ea92952-7c58-48eb-95b4-85db2c84bb66.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">농심 안성탕면 125g</p>
-          <p class="price">13,980원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7621201792&itemId=20206126483&vendorItemId=85138139639&traceid=V0-143-0af21b1c879bff2f" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img2c.coupangcdn.com/image/vendor_inventory/image_audit/prod/1ac59637-1955-435f-9672-4583d4d2acee_fixing_v2.png" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">마이밀 뉴프로틴 드링크 오리지널</p>
-          <p class="price">31,120원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7660544404&itemId=21260255862&vendorItemId=87489851733&traceid=V0-143-5966f030a5364314" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img5a.coupangcdn.com/image/retail/images/255598402063624-7bdeb975-ae4b-4cae-ae18-4fe4dca443e2.jpg" alt="" loading="lazy">
-          <span class="rank">#4</span>
-        </div>
-        <div class="card-body">
-          <p class="name">세브란스에이투 전용목장 단백우유</p>
-          <p class="price">19,900원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8522948260&itemId=25015974848&vendorItemId=92515830414&traceid=V0-143-5db55b52bde8ae0b" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img2c.coupangcdn.com/image/retail/images/d0deeb9d-d5c1-442c-8691-6703fd3d5a48944059863827258424.png" alt="" loading="lazy">
-          <span class="rank">#5</span>
-        </div>
-        <div class="card-body">
-          <p class="name">비에날씬 BNR17 다이어트 유산균 슬림플러스</p>
-          <p class="price">49,300원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-09">
-    <div class="day-label">4월 9일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8700921701&itemId=25266495058&vendorItemId=92262276451&traceid=V0-143-d5d65e0be9d71e6d" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image13.coupangcdn.com/image/retail/images/2025/04/07/16/7/a3f574df-8125-482f-b30c-171dd071a3d3.png" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">펩시 제로슈거 라임향 제로카페인 무라벨</p>
-          <p class="price">15,210원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=9447140712&itemId=21684599869&vendorItemId=70039618766&traceid=V0-143-b6960b4faa6e68b5" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image3.coupangcdn.com/image/retail/images/11146136162397-0ea92952-7c58-48eb-95b4-85db2c84bb66.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">농심 안성탕면 125g</p>
-          <p class="price">13,980원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=9260428247&itemId=27398212953&vendorItemId=94931504902&traceid=V0-143-459cc68fc8be1268" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img5a.coupangcdn.com/image/vendor_inventory/eabf/014c6861f9e399bce5ee12576e9a1eab953079709a6366ee0a541fd04f9f.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">kipnos 행거 스탠드 옷걸이행거 튼튼한행거 스탠드행거 철제 다용도</p>
-          <p class="price">40,480원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7951118447&itemId=21946035491&vendorItemId=88993870334&traceid=V0-143-ed49be332479d9f1" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img4c.coupangcdn.com/image/retail/images/85686234776718-58a50715-aafe-4dc6-8af5-ae0ffb921e45.jpg" alt="" loading="lazy">
-          <span class="rank">#4</span>
-        </div>
-        <div class="card-body">
-          <p class="name">에스쁘아 워터 스플래쉬 세라마이드 선크림 SPF50+ PA++++ 60ml + 30ml</p>
-          <p class="price">15,890원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8411430700&itemId=24320878878&vendorItemId=5011010804&traceid=V0-143-34862a4408ad3c65" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img5c.coupangcdn.com/image/retail/images/13672528414204-79e1dce5-971f-4cdf-a9d0-27667933bb87.jpg" alt="" loading="lazy">
-          <span class="rank">#5</span>
-        </div>
-        <div class="card-body">
-          <p class="name">롯데알미늄 제습기 12L</p>
-          <p class="price">189,000원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-07">
-    <div class="day-label">4월 7일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7455919074&itemId=24108242235&vendorItemId=85984112985&traceid=V0-143-31420e7ffc684935" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image7.coupangcdn.com/image/1025_amir_coupang_oct_80k/ca12/9b88a0325a006bc9b76a6d37ced4db41f68d8e9a785b938f18ec4e261202.jpg" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">베베숲 오리진 유아물티슈 캡형</p>
-          <p class="price">12,900원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7163822999&itemId=21900998757&vendorItemId=85188663364&traceid=V0-143-482f27908ad66f25" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image3.coupangcdn.com/image/retail/images/552866890985248-c312f232-3033-4899-a095-545fa6ff1d0f.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">테팔 인덕션 매직핸즈 스테인리스 컬렉션 트라이미 프라이팬세트 3개</p>
-          <p class="price">80,400원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8248049594&itemId=24387609392&vendorItemId=91402616619&traceid=V0-143-ff3c3bef4143bc56" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image9.coupangcdn.com/image/retail/images/878116454239293-f6683032-2b35-4641-b7f7-d9c88bad81fc.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">브랜든 2세대 부피순삭 의류 이불 다용도 대형 압축 파우치 2매세트</p>
-          <p class="price">86,490원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=1145100301&itemId=8224854290&vendorItemId=75512895879&traceid=V0-143-543bc5b5f18ad6ed" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image8.coupangcdn.com/image/retail/images/301197346688269-aa38c744-f6fa-4624-b65a-251632b27659.jpg" alt="" loading="lazy">
-          <span class="rank">#4</span>
-        </div>
-        <div class="card-body">
-          <p class="name">동원참치 고추 참치</p>
-          <p class="price">12,980원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7809946399&itemId=24515644731&vendorItemId=91528484327&traceid=V0-143-63300f92dc18b017" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image9.coupangcdn.com/image/retail/images/497419467490649-73338b90-72ee-4856-8806-d476333c3fc4.jpg" alt="" loading="lazy">
-          <span class="rank">#5</span>
-        </div>
-        <div class="card-body">
-          <p class="name">두발로 여성용 국산 에센셜 프리미엄 무지 중목 양말 10켤레 세트</p>
-          <p class="price">9,450원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-06">
-    <div class="day-label">4월 6일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7455919074&itemId=24108242235&vendorItemId=85984112985&traceid=V0-143-31420e7ffc684935" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image6.coupangcdn.com/image/1025_amir_coupang_oct_80k/ca12/9b88a0325a006bc9b76a6d37ced4db41f68d8e9a785b938f18ec4e261202.jpg" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">베베숲 오리진 유아물티슈 캡형</p>
-          <p class="price">12,900원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7163822999&itemId=21900998757&vendorItemId=85188663364&traceid=V0-143-482f27908ad66f25" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img2a.coupangcdn.com/image/retail/images/552866890985248-c312f232-3033-4899-a095-545fa6ff1d0f.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">테팔 인덕션 매직핸즈 스테인리스 컬렉션 트라이미 프라이팬세트 3개</p>
-          <p class="price">80,400원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8248049594&itemId=24387609392&vendorItemId=91402616619&traceid=V0-143-ff3c3bef4143bc56" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image13.coupangcdn.com/image/retail/images/878116454239293-f6683032-2b35-4641-b7f7-d9c88bad81fc.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">브랜든 2세대 부피순삭 의류 이불 다용도 대형 압축 파우치 2매세트</p>
-          <p class="price">86,490원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6654766761&itemId=15613010702&vendorItemId=3006697063&traceid=V0-143-426ea3e1f43a3d6d" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img2c.coupangcdn.com/image/retail/images/174045005217980-17af970b-b5b8-44e5-b02a-b089c4bcf50d.jpg" alt="" loading="lazy">
-          <span class="rank">#4</span>
-        </div>
-        <div class="card-body">
-          <p class="name">아몬드브리즈 오리지널</p>
-          <p class="price">15,890원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=1145100301&itemId=8224854290&vendorItemId=75512895879&traceid=V0-143-543bc5b5f18ad6ed" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image11.coupangcdn.com/image/retail/images/301197346688269-aa38c744-f6fa-4624-b65a-251632b27659.jpg" alt="" loading="lazy">
-          <span class="rank">#5</span>
-        </div>
-        <div class="card-body">
-          <p class="name">동원참치 고추 참치</p>
-          <p class="price">12,980원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-05">
-    <div class="day-label">4월 5일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=328677319&itemId=1051091399&vendorItemId=5517808550&traceid=V0-143-580cc5149a5b3679" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image14.coupangcdn.com/image/1025_amir_coupang_oct_80k/5139/2dff6ed9d1afe3e6d63c286ad0187bc8bd1f99bbbecd07b70e1131da7753.jpg" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">쿠팡베이직 네추럴 3겹 천연펄프 롤화장지 30m</p>
-          <p class="price">11,890원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=8544933292&itemId=548226098&vendorItemId=4437997998&traceid=V0-143-e8f931c28204b23d" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img2c.coupangcdn.com/image/retail/images/13294234308776-6a4a8922-4a8c-47b6-9950-370da86a67d5.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">포카리스웨트 무라벨</p>
-          <p class="price">29,140원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7828194275&itemId=21283169741&vendorItemId=5355814570&traceid=V0-143-7e986b88b3e26aeb" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image4.coupangcdn.com/image/vendor_inventory/860f/3a75791cf3010a3320b46e6c6caa3457159d3c77545090bae3fe7f2e36ed.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">세노비스 키즈 멀티비타민 미네랄</p>
-          <p class="price">29,920원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="day-section" id="2026-04-04">
-    <div class="day-label">4월 4일</div>
-    <div class="cards">
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=6902113163&itemId=16604123815&vendorItemId=83454344614&traceid=V0-143-91d7f95e842a48ba" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://img1a.coupangcdn.com/image/vendor_inventory/5adf/56af04084c3ad1a27c0dceb23c70e8b4dc1f2e4d3a4f226ef620e45496b0.jpg" alt="" loading="lazy">
-          <span class="rank">#1</span>
-        </div>
-        <div class="card-body">
-          <p class="name">르무통 메이트 발 편한 메리노울 운동화 블랙</p>
-          <p class="price">118,000원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=142412365&itemId=6088507327&vendorItemId=3056632559&traceid=V0-143-72a4a71d73f4678a" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image11.coupangcdn.com/image/retail/images/94761968167687-71f42b05-dc5e-4c35-8b00-fceda1c2809a.jpg" alt="" loading="lazy">
-          <span class="rank">#2</span>
-        </div>
-        <div class="card-body">
-          <p class="name">피죤 레귤러 섬유유연제 핑크로즈 본품</p>
-          <p class="price">16,120원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-      <a class="card" href="https://link.coupang.com/re/AFFSDP?lptag=AF9557065&subid=anymax&pageKey=7784271976&itemId=21045267208&vendorItemId=88107885741&traceid=V0-143-6c0222f0480ca45c" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="card-img">
-          <img src="https://image9.coupangcdn.com/image/retail/images/1417773117971752-b5593ce2-9d71-4636-9327-1fdf81d7d8f7.jpg" alt="" loading="lazy">
-          <span class="rank">#3</span>
-        </div>
-        <div class="card-body">
-          <p class="name">[로켓프레시] 무연골 돌돌말이 대패삼겹살 (냉동)</p>
-          <p class="price">12,500원</p>
-          <p class="cta">지금 확인하기 →</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
+  <div id="content"></div>
   <p class="no-results" id="noResults">검색 결과가 없습니다.</p>
 
   <script>
+    const CHANNEL_LABELS = {"coupang-goldbox": "오늘의 핫딜", "coupang-best": "인기상품", "coupang-search": "추천상품", "toss-daily-deals": "오늘의 특가"};
+    const INITIAL_DAYS = 7;
+
+    const params = new URLSearchParams(location.search);
+    const channel = params.get('ch') || 'coupang-goldbox';
+
+    document.getElementById('pageTitle').textContent = CHANNEL_LABELS[channel] || '오늘의 핫딜';
+
+    let allEntries = [];
+    let renderedDates = new Set();
+    let selectedDate = '';
+
     const searchInput = document.getElementById('searchInput');
     const ddWrap = document.getElementById('ddWrap');
     const ddTrigger = document.getElementById('ddTrigger');
     const ddLabel = document.getElementById('ddLabel');
     const ddMenu = document.getElementById('ddMenu');
+    const content = document.getElementById('content');
     const noResults = document.getElementById('noResults');
-    let selectedDate = '';
 
-    // 드롭다운 토글
-    ddTrigger.addEventListener('click', e => {
-      e.stopPropagation();
-      ddWrap.classList.toggle('open');
-    });
+    function showSkeleton() {
+      const skeletonCard = `
+        <div class="skeleton-card">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-body">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+            <div class="skeleton-line shorter"></div>
+          </div>
+        </div>`;
+      content.innerHTML = Array(2).fill('').map(() => `
+        <div class="skeleton-section">
+          <div class="skeleton-label"></div>
+          ${Array(5).fill(skeletonCard).join('')}
+        </div>
+      `).join('');
+    }
 
-    // 바깥 클릭 시 닫기
-    document.addEventListener('click', () => ddWrap.classList.remove('open'));
+    function cardHtml(rank, p) {
+      const link = p.affiliate_url || p.url || '#';
+      const imgHtml = p.image_url
+        ? `<img src="${p.image_url}" alt="" loading="lazy">`
+        : '<div class="img-placeholder"></div>';
+      return `
+        <a class="card" href="${link}" target="_blank" rel="noopener noreferrer sponsored">
+          <div class="card-img">
+            ${imgHtml}
+            <span class="rank">#${rank}</span>
+          </div>
+          <div class="card-body">
+            <p class="name">${p.name || ''}</p>
+            <p class="price">${p.price || ''}</p>
+            <p class="cta">지금 확인하기 →</p>
+          </div>
+        </a>`;
+    }
 
-    // 항목 선택
-    ddMenu.addEventListener('click', e => {
-      const item = e.target.closest('.dd-item');
-      if (!item) return;
-      selectedDate = item.dataset.value;
-      ddLabel.textContent = item.textContent;
-      ddMenu.querySelectorAll('.dd-item').forEach(el => el.classList.remove('selected'));
-      item.classList.add('selected');
-      ddWrap.classList.remove('open');
-      applyFilter();
-    });
+    function sectionHtml(entry) {
+      const cards = entry.products.map((p, i) => cardHtml(i + 1, p)).join('');
+      return `
+        <div class="day-section" id="${entry.date}">
+          <div class="day-label">${entry.label}</div>
+          <div class="cards">${cards}</div>
+        </div>`;
+    }
+
+    function ensureRendered(dateVal) {
+      if (renderedDates.has(dateVal)) return;
+      const entry = allEntries.find(e => e.date === dateVal);
+      if (!entry) return;
+      content.insertAdjacentHTML('beforeend', sectionHtml(entry));
+      renderedDates.add(dateVal);
+    }
 
     function applyFilter() {
       const keyword = searchInput.value.trim().toLowerCase();
+      if (selectedDate) ensureRendered(selectedDate);
       let anyVisible = false;
-
       document.querySelectorAll('.day-section').forEach(section => {
         const dateMatch = !selectedDate || section.id === selectedDate;
         let sectionHasVisible = false;
@@ -716,11 +427,56 @@
         section.classList.toggle('hidden', !sectionHasVisible);
         if (sectionHasVisible) anyVisible = true;
       });
-
       noResults.style.display = anyVisible ? 'none' : 'block';
     }
 
+    async function loadData() {
+      showSkeleton();
+      try {
+        const res = await fetch(`${channel}/data.json`);
+        if (!res.ok) throw new Error(res.status);
+        allEntries = await res.json();
+      } catch (e) {
+        content.innerHTML = '<p style="text-align:center;color:#555;padding:40px">데이터를 불러올 수 없습니다.</p>';
+        return;
+      }
+
+      // 드롭다운에 날짜 목록 추가
+      allEntries.forEach(e => {
+        const li = document.createElement('li');
+        li.className = 'dd-item';
+        li.dataset.value = e.date;
+        li.textContent = e.label;
+        ddMenu.appendChild(li);
+      });
+
+      // 최근 INITIAL_DAYS일만 초기 렌더링
+      content.innerHTML = '';
+      allEntries.slice(0, INITIAL_DAYS).forEach(e => {
+        content.insertAdjacentHTML('beforeend', sectionHtml(e));
+        renderedDates.add(e.date);
+      });
+    }
+
+    ddTrigger.addEventListener('click', e => {
+      e.stopPropagation();
+      ddWrap.classList.toggle('open');
+    });
+    document.addEventListener('click', () => ddWrap.classList.remove('open'));
+    ddMenu.addEventListener('click', e => {
+      const item = e.target.closest('.dd-item');
+      if (!item) return;
+      selectedDate = item.dataset.value;
+      ddLabel.textContent = item.textContent;
+      ddMenu.querySelectorAll('.dd-item').forEach(el => el.classList.remove('selected'));
+      item.classList.add('selected');
+      ddWrap.classList.remove('open');
+      applyFilter();
+    });
+
     searchInput.addEventListener('input', applyFilter);
+
+    loadData();
   </script>
 </body>
 </html>
