@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-15",
+    "label": "4월 15일",
+    "products": [
+      {
+        "name": "나랑드사이다 제로",
+        "price": "12,630원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7447842898&itemId=19382112694&vendorItemId=73436003598&traceid=V0-143-fae84f60ea5ba78b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7447842898&itemId=19382112694&vendorItemId=73436003598&traceid=V0-143-fae84f60ea5ba78b",
+        "image_url": "https://image14.coupangcdn.com/image/retail/images/80870368036782-dc973a90-7102-44fc-9689-b902862ddd29.jpg"
+      },
+      {
+        "name": "바닐라코 프라임 프라이머 클래식 30ml",
+        "price": "12,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6758946049&itemId=15833647353&vendorItemId=82253355273&traceid=V0-143-290d040b0e871703",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6758946049&itemId=15833647353&vendorItemId=82253355273&traceid=V0-143-290d040b0e871703",
+        "image_url": "https://image11.coupangcdn.com/image/vendor_inventory/bdb8/53e430ae5223bc6f4aff4774a5fded5e72c77d8a078154912a4963d86d75.jpg"
+      },
+      {
+        "name": "필립스 인이어 블루투스 이어폰",
+        "price": "19,800원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9403138458&itemId=27933032451&vendorItemId=94891405517&traceid=V0-143-2be8a54b2a082ce9",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9403138458&itemId=27933032451&vendorItemId=94891405517&traceid=V0-143-2be8a54b2a082ce9",
+        "image_url": "https://image8.coupangcdn.com/image/retail/images/341169775898781-5215bd4d-4b3a-441a-8929-a7f088631820.png"
+      },
+      {
+        "name": "비타500 칼슘",
+        "price": "26,700원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8144848128&itemId=14311553073&vendorItemId=81356445475&traceid=V0-143-4d7760346ff32ef4",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8144848128&itemId=14311553073&vendorItemId=81356445475&traceid=V0-143-4d7760346ff32ef4",
+        "image_url": "https://image9.coupangcdn.com/image/1025_amir_coupang_oct_80k/7ef9/0003772aae2bb296450484557a4dd932f89cb037b6b04509d27cd9a2d638.jpg"
+      },
+      {
+        "name": "아카페라 심플리 디카페인 아메리카노 무라벨",
+        "price": "22,790원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7777553121&itemId=3196535478&vendorItemId=71183937356&traceid=V0-143-cc2fb286266e120c",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7777553121&itemId=3196535478&vendorItemId=71183937356&traceid=V0-143-cc2fb286266e120c",
+        "image_url": "https://image5.coupangcdn.com/image/retail/images/35187806279173-0ffcdb04-fc55-4dc0-b8b0-5a88691c9fae.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-14",
     "label": "4월 14일",
     "products": [
