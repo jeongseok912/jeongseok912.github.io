@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-17",
+    "label": "4월 17일",
+    "products": [
+      {
+        "name": "스윗토 스테비아 대추방울토마토",
+        "price": "10,780원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4744789493&itemId=6032995407&vendorItemId=73330579108&traceid=V0-143-2195a851bf0297b4",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4744789493&itemId=6032995407&vendorItemId=73330579108&traceid=V0-143-2195a851bf0297b4",
+        "image_url": "https://img3a.coupangcdn.com/image/retail/images/148864028641734-ba606a3a-2a5c-4d62-8d3e-e79ea7672375.jpg"
+      },
+      {
+        "name": "마이밀 정품 뉴프로틴 고소한맛",
+        "price": "62,330원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6813646287&itemId=23204452550&vendorItemId=71290578403&traceid=V0-143-e6273a404c9b10f9",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6813646287&itemId=23204452550&vendorItemId=71290578403&traceid=V0-143-e6273a404c9b10f9",
+        "image_url": "https://image8.coupangcdn.com/image/retail/images/60196325275947-60de8422-5657-47a7-9f76-630c6405a017.jpg"
+      },
+      {
+        "name": "코카콜라 제로 무라벨",
+        "price": "22,290원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6955197525&itemId=17771296119&vendorItemId=88377301303&traceid=V0-143-ca7e0c48531f0d73",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6955197525&itemId=17771296119&vendorItemId=88377301303&traceid=V0-143-ca7e0c48531f0d73",
+        "image_url": "https://img1a.coupangcdn.com/image/retail/images/357307576315419-db13617b-51b2-47fd-b370-1d6cc70dc5c2.jpg"
+      },
+      {
+        "name": "CLA 데일리 보건용 마스크 대형 KF94",
+        "price": "13,800원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7032499563&itemId=17360451908&vendorItemId=84530417423&traceid=V0-143-cc642758e737dea0",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7032499563&itemId=17360451908&vendorItemId=84530417423&traceid=V0-143-cc642758e737dea0",
+        "image_url": "https://img4c.coupangcdn.com/image/retail/images/3471101021222211-2b576a5f-e554-4093-a0dd-6588de027450.png"
+      },
+      {
+        "name": "행복미트 돼지 통목살 부드럽고 맛좋은 왕목살 목전지 수욕 찜 국거리용",
+        "price": "23,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8147985725&itemId=23173902173&vendorItemId=90206625186&traceid=V0-143-450b69fff521b449",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8147985725&itemId=23173902173&vendorItemId=90206625186&traceid=V0-143-450b69fff521b449",
+        "image_url": "https://image9.coupangcdn.com/image/vendor_inventory/33ce/64274c16120f065835992723746dde45b60134b1a45c2d37fa5710107755.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-16",
     "label": "4월 16일",
     "products": [
