@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-18",
+    "label": "4월 18일",
+    "products": [
+      {
+        "name": "하림 치킨너겟 (냉동)",
+        "price": "12,600원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4567751809&itemId=5575412259&vendorItemId=72874737915&traceid=V0-143-71a6cf91c6e7fc08",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4567751809&itemId=5575412259&vendorItemId=72874737915&traceid=V0-143-71a6cf91c6e7fc08",
+        "image_url": "https://image2.coupangcdn.com/image/retail/images/874879245005147-0d71026b-1d2d-4c2b-9228-fccd444be4b4.jpg"
+      },
+      {
+        "name": "보몽드 국내 제조 시원한 냉감패드",
+        "price": "32,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8686264832&itemId=25216602378&vendorItemId=92213042532&traceid=V0-143-4b4bdbab36f013d6",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8686264832&itemId=25216602378&vendorItemId=92213042532&traceid=V0-143-4b4bdbab36f013d6",
+        "image_url": "https://image4.coupangcdn.com/image/retail/images/251559422679897-bfd04867-45da-4737-ace9-922a78e9b807.jpg"
+      },
+      {
+        "name": "홈럭스 파워수압 필터 샤워기 + 필터 5개 + 샤워호스 1.5M + 거치데 안마 샤워기세트 8pcs",
+        "price": "9,140원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9150861959&itemId=26945531221&vendorItemId=94965815389&traceid=V0-143-23c58c62889d9fb8",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9150861959&itemId=26945531221&vendorItemId=94965815389&traceid=V0-143-23c58c62889d9fb8",
+        "image_url": "https://image6.coupangcdn.com/image/vendor_inventory/cc0a/4f9a7f8b278323bc98d918f3d748a2aea818b717fafc835eb744b1606662.jpg"
+      },
+      {
+        "name": "키루에 폴딩 대용량 리빙박스 수납장 대용량 수납 정리함 접이식 보관함 다용도 수납함 플라스틱 수납함 사물함 정리함 리빙박 스수납박스 대형가정용 장난감 수납장 옷정리함",
+        "price": "30,780원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9501056715&itemId=28304934910&vendorItemId=94934758199&traceid=V0-143-04dfcf75c4196de6",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9501056715&itemId=28304934910&vendorItemId=94934758199&traceid=V0-143-04dfcf75c4196de6",
+        "image_url": "https://image2.coupangcdn.com/image/vendor_inventory/438c/9b803e72f81cfc1adaa8f5422c6e327623331bb6764958e90ab69a372f7d.jpg"
+      },
+      {
+        "name": "편강율 키즈 앤 베이비 모이스처 선쿠션 SPF50+ PA++++",
+        "price": "11,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7495425977&itemId=19609016679&vendorItemId=86716041753&traceid=V0-143-72ee0f2e337be27b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7495425977&itemId=19609016679&vendorItemId=86716041753&traceid=V0-143-72ee0f2e337be27b",
+        "image_url": "https://image12.coupangcdn.com/image/retail/images/554069575932818-835240fd-f022-476e-84e5-4d79ee246ea9.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-17",
     "label": "4월 17일",
     "products": [
