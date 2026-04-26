@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-26",
+    "label": "4월 26일",
+    "products": [
+      {
+        "name": "깨끗한나라 순수 프리미엄 더 퍼스트 천연펄프 3겹 고급롤화장지",
+        "price": "19,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8261290138&itemId=23799287068&vendorItemId=3008436205&traceid=V0-143-52a81dcb33d04497",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8261290138&itemId=23799287068&vendorItemId=3008436205&traceid=V0-143-52a81dcb33d04497",
+        "image_url": "https://img3a.coupangcdn.com/image/retail/images/156598096570083-90d30e76-0aed-43fc-b63a-dabc28cba1f7.jpg"
+      },
+      {
+        "name": "코카콜라 제로",
+        "price": "15,910원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8174473713&itemId=19977722612&vendorItemId=88377301608&traceid=V0-143-4d8275f22060fd79",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8174473713&itemId=19977722612&vendorItemId=88377301608&traceid=V0-143-4d8275f22060fd79",
+        "image_url": "https://img4c.coupangcdn.com/image/retail/images/79678112711994-993834df-28a8-4839-8127-15735aaed1df.jpg"
+      },
+      {
+        "name": "마이비데 키즈 화장실용 물티슈 캡형",
+        "price": "13,780원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8502358197&itemId=3469643955&vendorItemId=82511800403&traceid=V0-143-be791b2db7367234",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8502358197&itemId=3469643955&vendorItemId=82511800403&traceid=V0-143-be791b2db7367234",
+        "image_url": "https://static.coupangcdn.com/image/1025_amir_coupang_oct_80k/5fd4/35f7fb8f4ec961f2a96f8fddf2b2461afb06529264a56cc73a21d41eb334.jpg"
+      },
+      {
+        "name": "파워에이드 마운틴 블라스트",
+        "price": "12,920원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8157286425&itemId=19204401715&vendorItemId=4606296347&traceid=V0-143-41c0e706ad6363ca",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8157286425&itemId=19204401715&vendorItemId=4606296347&traceid=V0-143-41c0e706ad6363ca",
+        "image_url": "https://image4.coupangcdn.com/image/retail/images/5391563659701-787f45d3-a3e9-481a-8244-e8e8cba40c39.jpg"
+      },
+      {
+        "name": "헤라 브로우 디자이너 오토펜슬 0.3g",
+        "price": "27,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8273351917&itemId=23846115346&vendorItemId=94791765103&traceid=V0-143-0caa875cd9b68710",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8273351917&itemId=23846115346&vendorItemId=94791765103&traceid=V0-143-0caa875cd9b68710",
+        "image_url": "https://image14.coupangcdn.com/image/retail/images/2024/08/06/16/3/cdc158b0-e21e-4f4e-9c7e-7b115d42df8b.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-25",
     "label": "4월 25일",
     "products": [
