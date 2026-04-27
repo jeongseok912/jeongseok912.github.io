@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-27",
+    "label": "4월 27일",
+    "products": [
+      {
+        "name": "코카콜라 오리지널",
+        "price": "16,830원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371774&itemId=21184770164&vendorItemId=88377301422&traceid=V0-143-90293e766f4ba76f",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371774&itemId=21184770164&vendorItemId=88377301422&traceid=V0-143-90293e766f4ba76f",
+        "image_url": "https://image2.coupangcdn.com/image/retail/images/89720961368927-a2bc7a57-cb63-4376-b222-56cce7c5c2fd.jpg"
+      },
+      {
+        "name": "이롬 황성주 박사의 국산콩 두유 검은콩 고칼슘",
+        "price": "11,360원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8788886173&itemId=10658894343&vendorItemId=3000036300&traceid=V0-143-49ff1586f5424193",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8788886173&itemId=10658894343&vendorItemId=3000036300&traceid=V0-143-49ff1586f5424193",
+        "image_url": "https://image7.coupangcdn.com/image/retail/images/169631118157321-5c65d596-314b-4c7d-a1b9-673ab8829434.jpg"
+      },
+      {
+        "name": "청정원순창 우리쌀로 만든 100% 국산 고추장",
+        "price": "13,800원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6529883355&itemId=17656542256&vendorItemId=84822073265&traceid=V0-143-3fdec2551363b984",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6529883355&itemId=17656542256&vendorItemId=84822073265&traceid=V0-143-3fdec2551363b984",
+        "image_url": "https://image15.coupangcdn.com/image/retail/images/2099550543706664-ded0047d-f362-4a96-ab7e-b3a7855bb5d2.jpg"
+      },
+      {
+        "name": "바이탈프로그램 정품 비타민C 1000mg",
+        "price": "25,960원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6903873562&itemId=18220645881&vendorItemId=3000177635&traceid=V0-143-c6b015d67fcab21b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6903873562&itemId=18220645881&vendorItemId=3000177635&traceid=V0-143-c6b015d67fcab21b",
+        "image_url": "https://image3.coupangcdn.com/image/retail/images/356520294251232-c73ad7c0-54a6-4a56-a26a-9a2fd48e46cb.jpg"
+      },
+      {
+        "name": "이플린 어버이날 비누꽃 화분 + 큐빅 카네이션 브로치 세트",
+        "price": "17,500원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8490952946&itemId=7248010151&vendorItemId=74539944808&traceid=V0-143-0bcd7ff7265771e2",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8490952946&itemId=7248010151&vendorItemId=74539944808&traceid=V0-143-0bcd7ff7265771e2",
+        "image_url": "https://image13.coupangcdn.com/image/retail/images/3557770212531123-141f254b-5a4e-4683-97c0-130459124d49.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-26",
     "label": "4월 26일",
     "products": [
