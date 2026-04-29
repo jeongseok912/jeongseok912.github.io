@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-29",
+    "label": "4월 29일",
+    "products": [
+      {
+        "name": "코멧 순백 3겹 라벤더 바닐라 롤화장지",
+        "price": "11,990원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=261192458&itemId=816702952&vendorItemId=5077941266&traceid=V0-143-5875e3f7a89a609b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=261192458&itemId=816702952&vendorItemId=5077941266&traceid=V0-143-5875e3f7a89a609b",
+        "image_url": "https://image15.coupangcdn.com/image/retail/images/66150481879369-ec52c797-db15-4a1a-b1fd-c711046a8cc0.jpg"
+      },
+      {
+        "name": "셀렉스 프로틴 오리지널",
+        "price": "25,970원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9334640009&itemId=19428960882&vendorItemId=82914630148&traceid=V0-143-8290043ae3df61b3",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9334640009&itemId=19428960882&vendorItemId=82914630148&traceid=V0-143-8290043ae3df61b3",
+        "image_url": "https://image15.coupangcdn.com/image/vendor_inventory/image_audit/prod/333def01-f0e5-4c4f-8f9d-f89b21f50659_fixing_v2.png"
+      },
+      {
+        "name": "클룹 애사비소다 오리지널",
+        "price": "26,390원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8054602080&itemId=22696756889&vendorItemId=89732354095&traceid=V0-143-e43327b0cf9c56d1",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8054602080&itemId=22696756889&vendorItemId=89732354095&traceid=V0-143-e43327b0cf9c56d1",
+        "image_url": "https://img4c.coupangcdn.com/image/retail/images/24599535340050-cb0e951e-5cc4-46ba-94d2-ddfc455ce91b.png"
+      },
+      {
+        "name": "헤지스 남성용 냉감 와플조직 크루넥 반팔 티셔츠",
+        "price": "75,500원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8785768080&itemId=25566291276&vendorItemId=92557491133&traceid=V0-143-85f0e40b1f032e02",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8785768080&itemId=25566291276&vendorItemId=92557491133&traceid=V0-143-85f0e40b1f032e02",
+        "image_url": "https://img2a.coupangcdn.com/image/retail/images/66609166628667-f089ba01-816d-4978-8efa-c903a56c03dc.jpg"
+      },
+      {
+        "name": "뽁순이 뽁뽁이 에어캡",
+        "price": "29,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6082015252&itemId=19715012679&vendorItemId=87976468189&traceid=V0-143-2ee1d67f7dc9a4bb",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6082015252&itemId=19715012679&vendorItemId=87976468189&traceid=V0-143-2ee1d67f7dc9a4bb",
+        "image_url": "https://image11.coupangcdn.com/image/retail/images/928832955206860-c1a57ca9-1d72-4006-aa45-7912fc878a49.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-28",
     "label": "4월 28일",
     "products": [
