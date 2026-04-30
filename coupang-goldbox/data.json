@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-04-30",
+    "label": "4월 30일",
+    "products": [
+      {
+        "name": "신라면 120g",
+        "price": "15,790원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7958974&itemId=20493837289&vendorItemId=3000260906&traceid=V0-143-2d25f09476b2dcfc",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7958974&itemId=20493837289&vendorItemId=3000260906&traceid=V0-143-2d25f09476b2dcfc",
+        "image_url": "https://image4.coupangcdn.com/image/retail/images/261218040499787-b954ff07-8bd7-4302-8f14-eb2fa31628fb.jpg"
+      },
+      {
+        "name": "베베앙 120 유아물티슈 캡형",
+        "price": "11,990원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8548508229&itemId=21436080703&vendorItemId=84095676789&traceid=V0-143-ff37ad35591c9c7c",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8548508229&itemId=21436080703&vendorItemId=84095676789&traceid=V0-143-ff37ad35591c9c7c",
+        "image_url": "https://image12.coupangcdn.com/image/retail/images/1423721803262108-18b9773d-b5e2-4ccc-b3c7-cb3ed11ad1af.jpg"
+      },
+      {
+        "name": "뉴케어 정품 액티브 오리지널",
+        "price": "47,190원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7821562659&itemId=21246415266&vendorItemId=71742350634&traceid=V0-143-3db500e1c452df4a",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7821562659&itemId=21246415266&vendorItemId=71742350634&traceid=V0-143-3db500e1c452df4a",
+        "image_url": "https://img2c.coupangcdn.com/image/retail/images/391972988229062-bbdb0c4e-dcbd-4c18-843c-6a4a258f5ff0.jpg"
+      },
+      {
+        "name": "키루에 의자 컴퓨터의자 책상의자 사무용의자 학생 사무실의자 공부의자 사무실 회의실 독서실 사무용 컴퓨터 의자 푹신한 메쉬 의자",
+        "price": "42,970원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9472591955&itemId=28195912659&vendorItemId=94075618756&traceid=V0-143-945cb2eecd790ac5",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9472591955&itemId=28195912659&vendorItemId=94075618756&traceid=V0-143-945cb2eecd790ac5",
+        "image_url": "https://image5.coupangcdn.com/image/vendor_inventory/fa62/0a8a4de14e7b20ee2eab760024e8fdf334b00cc9e98e26b544af7828f656.png"
+      },
+      {
+        "name": "코멧 미용티슈",
+        "price": "7,990원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=188121233&itemId=23008658479&vendorItemId=90042511420&traceid=V0-143-6e870171ea209814",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=188121233&itemId=23008658479&vendorItemId=90042511420&traceid=V0-143-6e870171ea209814",
+        "image_url": "https://img2c.coupangcdn.com/image/retail/images/78498986449336-d62abfe3-f7b8-4b6c-a744-14aa01841da9.png"
+      }
+    ]
+  },
+  {
     "date": "2026-04-29",
     "label": "4월 29일",
     "products": [
