@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-01",
+    "label": "5월 1일",
+    "products": [
+      {
+        "name": "크리넥스 데코 앤 소프트 수딩플러스 천연펄프 3겹 고급롤화장지",
+        "price": "20,050원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8253356297&itemId=19225434830&vendorItemId=82721168339&traceid=V0-143-eb3967e74b4746c4",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8253356297&itemId=19225434830&vendorItemId=82721168339&traceid=V0-143-eb3967e74b4746c4",
+        "image_url": "https://image1.coupangcdn.com/image/retail/images/13791393968848-f19acff4-c8cd-47b9-86ba-5a7807253a9e.png"
+      },
+      {
+        "name": "코코도르 카네이션 디퓨저 120ml",
+        "price": "17,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9456386783&itemId=28136490454&vendorItemId=95092050715&traceid=V0-143-78407cf9ac4f3f13",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9456386783&itemId=28136490454&vendorItemId=95092050715&traceid=V0-143-78407cf9ac4f3f13",
+        "image_url": "https://image1.coupangcdn.com/image/retail/images/251703237216285-a4d23774-833c-4b4e-93d7-7339edfbe188.jpg"
+      },
+      {
+        "name": "CNP차앤박 프로폴리스 에너지 앰플 미스트 플러스",
+        "price": "16,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371507405&itemId=28237807355&vendorItemId=91008513984&traceid=V0-143-e45019d346bd928f",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371507405&itemId=28237807355&vendorItemId=91008513984&traceid=V0-143-e45019d346bd928f",
+        "image_url": "https://image3.coupangcdn.com/image/vendor_inventory/fc9b/34d035b92caa2d48cde5e24bef81563390cae9e5d0c0996d7594ff37d837.jpg"
+      },
+      {
+        "name": "재로우 우먼스 펨 도피러스 유산균 캡슐",
+        "price": "35,080원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6960887991&itemId=18566924182&vendorItemId=5118205758&traceid=V0-143-7d2f4bc4b6236f2b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6960887991&itemId=18566924182&vendorItemId=5118205758&traceid=V0-143-7d2f4bc4b6236f2b",
+        "image_url": "https://img5c.coupangcdn.com/image/vendor_inventory/image_audit/stage/manual/6e93c75c-ebaa-4bfb-a1a9-3571a8f23999_fixing_v2_1751346510416.png"
+      },
+      {
+        "name": "매일야채 고농축 토마토의 힘",
+        "price": "20,440원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7830515340&itemId=21295742142&vendorItemId=81196318587&traceid=V0-143-0d13c2701b60a4b9",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7830515340&itemId=21295742142&vendorItemId=81196318587&traceid=V0-143-0d13c2701b60a4b9",
+        "image_url": "https://image7.coupangcdn.com/image/vendor_inventory/75f1/1f9fc0ce0d7d2c3218b1b500ee08fcc962a8777647274a0330b819a2e78b.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-04-30",
     "label": "4월 30일",
     "products": [
