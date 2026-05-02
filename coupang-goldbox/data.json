@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-02",
+    "label": "5월 2일",
+    "products": [
+      {
+        "name": "코카콜라 오리지널",
+        "price": "22,140원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371774&itemId=13530883960&vendorItemId=88377301407&traceid=V0-143-90293e766f4ba76f",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9371774&itemId=13530883960&vendorItemId=88377301407&traceid=V0-143-90293e766f4ba76f",
+        "image_url": "https://img5c.coupangcdn.com/image/retail/images/68357096027416-cc28db91-a4e9-4842-813a-3687cbff7e07.jpg"
+      },
+      {
+        "name": "[로켓프레시] 다향 훈제오리",
+        "price": "14,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7243716923&itemId=18410893653&vendorItemId=85553342481&traceid=V0-143-157726e8668ab2f9",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7243716923&itemId=18410893653&vendorItemId=85553342481&traceid=V0-143-157726e8668ab2f9",
+        "image_url": "https://image15.coupangcdn.com/image/retail/images/421766234991410-c1d32fa8-e084-4233-8284-8f92c46cb5bb.jpg"
+      },
+      {
+        "name": "알텐바흐 인덕션 헥사 통5중 스텐 프라이팬",
+        "price": "48,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=5391887777&itemId=8043971579&vendorItemId=75332578539&traceid=V0-143-e4fccfe841e56531",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=5391887777&itemId=8043971579&vendorItemId=75332578539&traceid=V0-143-e4fccfe841e56531",
+        "image_url": "https://image9.coupangcdn.com/image/1025_amir_coupang_oct_80k/047e/4cf786e98fa56b7bea4c486ede83c08d19682f591a2e3da993fe394d37c4.jpg"
+      },
+      {
+        "name": "뷰티풀데코센스 조화 자이언트 리본장식 카네이션",
+        "price": "13,700원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7837583997&itemId=21327729180&vendorItemId=84731131239&traceid=V0-143-15a0334d452e0719",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7837583997&itemId=21327729180&vendorItemId=84731131239&traceid=V0-143-15a0334d452e0719",
+        "image_url": "https://img1a.coupangcdn.com/image/retail/images/205577209193170-a9f6b76f-5cdf-43e0-9000-12bdf9c3fc5f.jpg"
+      },
+      {
+        "name": "Kipnos 행거 스탠드 옷걸이행거 튼튼한행거 스탠드행거 철제 다용도",
+        "price": "43,700원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9260428247&itemId=27398212953&vendorItemId=95061030440&traceid=V0-143-459cc68fc8be1268",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=9260428247&itemId=27398212953&vendorItemId=95061030440&traceid=V0-143-459cc68fc8be1268",
+        "image_url": "https://img3c.coupangcdn.com/image/vendor_inventory/eabf/014c6861f9e399bce5ee12576e9a1eab953079709a6366ee0a541fd04f9f.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-05-01",
     "label": "5월 1일",
     "products": [
