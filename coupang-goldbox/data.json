@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-04",
+    "label": "5월 4일",
+    "products": [
+      {
+        "name": "아몬드브리즈 오리지널",
+        "price": "15,440원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6654766761&itemId=15613010702&vendorItemId=3006697063&traceid=V0-143-426ea3e1f43a3d6d",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6654766761&itemId=15613010702&vendorItemId=3006697063&traceid=V0-143-426ea3e1f43a3d6d",
+        "image_url": "https://image3.coupangcdn.com/image/retail/images/62392158900845-db2260a0-1ea8-4145-bcbe-c5e769595991.jpg"
+      },
+      {
+        "name": "테팔 매트 프라이팬 세트",
+        "price": "75,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4917534787&itemId=26925722626&vendorItemId=73731783973&traceid=V0-143-22abc90624b3c289",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4917534787&itemId=26925722626&vendorItemId=73731783973&traceid=V0-143-22abc90624b3c289",
+        "image_url": "https://img1a.coupangcdn.com/image/retail/images/941245883729726-3ee81dfd-48fc-4563-8c06-04acfcfdf03d.jpg"
+      },
+      {
+        "name": "파워에이드 제로",
+        "price": "18,890원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7168704316&itemId=15509101&vendorItemId=90861125615&traceid=V0-143-322ca15e5540b494",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7168704316&itemId=15509101&vendorItemId=90861125615&traceid=V0-143-322ca15e5540b494",
+        "image_url": "https://image9.coupangcdn.com/image/retail/images/5393230486688-34423626-75ea-47f7-b83c-bd0f3ca24d99.jpg"
+      },
+      {
+        "name": "코카콜라 제로",
+        "price": "20,310원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=71444050&itemId=20262697453&vendorItemId=90823689909&traceid=V0-143-54bd195cb4bb0256",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=71444050&itemId=20262697453&vendorItemId=90823689909&traceid=V0-143-54bd195cb4bb0256",
+        "image_url": "https://img5c.coupangcdn.com/image/retail/images/349121684142854-936d432c-0e7a-4bb3-b935-4459f66df859.jpg"
+      },
+      {
+        "name": "마스마룰즈 남녀공용 래빗에코백 + 파우치 세트",
+        "price": "39,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8631563688&itemId=25041770087&vendorItemId=92046387086&traceid=V0-143-a68debb68e4f9224",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8631563688&itemId=25041770087&vendorItemId=92046387086&traceid=V0-143-a68debb68e4f9224",
+        "image_url": "https://img3a.coupangcdn.com/image/retail/images/331657537066570-7569155e-ddf7-4a23-a591-81431415d88d.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-05-03",
     "label": "5월 3일",
     "products": [
