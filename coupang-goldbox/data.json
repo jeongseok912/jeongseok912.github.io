@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-06",
+    "label": "5월 6일",
+    "products": [
+      {
+        "name": "스윗토 스테비아 대추방울토마토",
+        "price": "10,990원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4744789493&itemId=6032995407&vendorItemId=73330579108&traceid=V0-143-2195a851bf0297b4",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=4744789493&itemId=6032995407&vendorItemId=73330579108&traceid=V0-143-2195a851bf0297b4",
+        "image_url": "https://image4.coupangcdn.com/image/retail/images/148864028641734-ba606a3a-2a5c-4d62-8d3e-e79ea7672375.jpg"
+      },
+      {
+        "name": "테팔 인덕션 티타늄 1X 데일리 컴포트 프라이팬",
+        "price": "42,590원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8758755740&itemId=26631309916&vendorItemId=92459226230&traceid=V0-143-f54c08ac9885c5ae",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8758755740&itemId=26631309916&vendorItemId=92459226230&traceid=V0-143-f54c08ac9885c5ae",
+        "image_url": "https://image1.coupangcdn.com/image/retail/images/2025/05/07/12/9/98cfc449-abb0-420a-b008-91063e4c7ef7.jpg"
+      },
+      {
+        "name": "코튼클라우드 호텔수건 200g 40수 코마사",
+        "price": "39,800원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=48154062&itemId=18275122951&vendorItemId=3720038969&traceid=V0-143-76656b58493ee99b",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=48154062&itemId=18275122951&vendorItemId=3720038969&traceid=V0-143-76656b58493ee99b",
+        "image_url": "https://image13.coupangcdn.com/image/1025_amir_coupang_oct_80k/e058/3a09c1f3a9a6b03d2c8ee18f9300f71b01598774d2266a5d23f0ea9e822c.jpg"
+      },
+      {
+        "name": "코멧 홈 파워수압 샤워기 + PVC샤워줄 2m",
+        "price": "9,890원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6446590073&itemId=13976385501&vendorItemId=81225244791&traceid=V0-143-567cb0bebfb56283",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6446590073&itemId=13976385501&vendorItemId=81225244791&traceid=V0-143-567cb0bebfb56283",
+        "image_url": "https://image3.coupangcdn.com/image/1025_amir_coupang_oct_80k/0d53/4d8dcdc1649ad4600fae54e9135ed76acb3be383474e834065eede2687d8.jpg"
+      },
+      {
+        "name": "[로켓프레시] 사세 버팔로 윙 골드 (냉동)",
+        "price": "18,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8096380288&itemId=22891027679&vendorItemId=89925594499&traceid=V0-143-39e0c102e96cab6f",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8096380288&itemId=22891027679&vendorItemId=89925594499&traceid=V0-143-39e0c102e96cab6f",
+        "image_url": "https://img5a.coupangcdn.com/image/retail/images/38439997892089-3edff580-9795-4d03-9321-bc3a025b5d84.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-05-05",
     "label": "5월 5일",
     "products": [
