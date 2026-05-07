@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-07",
+    "label": "5월 7일",
+    "products": [
+      {
+        "name": "베베숲 오리진 유아물티슈 캡형",
+        "price": "13,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7455919074&itemId=24108242235&vendorItemId=85984112985&traceid=V0-143-31420e7ffc684935",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7455919074&itemId=24108242235&vendorItemId=85984112985&traceid=V0-143-31420e7ffc684935",
+        "image_url": "https://image14.coupangcdn.com/image/1025_amir_coupang_oct_80k/ca12/9b88a0325a006bc9b76a6d37ced4db41f68d8e9a785b938f18ec4e261202.jpg"
+      },
+      {
+        "name": "하이뮨 프로틴 밸런스 L 캔",
+        "price": "36,000원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7127545378&itemId=24377331092&vendorItemId=88559627052&traceid=V0-143-16229ff84e1945ef",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=7127545378&itemId=24377331092&vendorItemId=88559627052&traceid=V0-143-16229ff84e1945ef",
+        "image_url": "https://image1.coupangcdn.com/image/retail/images/460804778143902-d136a245-a5ac-45c5-9da2-2d3c38b2e672.jpg"
+      },
+      {
+        "name": "리큐 진한겔 하이브리드 플로랄향 일반용 액상세제 리필",
+        "price": "18,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6616908158&itemId=15028216593&vendorItemId=3116820080&traceid=V0-143-87a89f30c7f46283",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6616908158&itemId=15028216593&vendorItemId=3116820080&traceid=V0-143-87a89f30c7f46283",
+        "image_url": "https://img2c.coupangcdn.com/image/retail/images/761007085729374-b567084c-ea9c-4308-b1f9-a6abb12ade79.jpg"
+      },
+      {
+        "name": "피죤 레귤러 섬유유연제 핑크로즈 본품",
+        "price": "16,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=142412365&itemId=6088507327&vendorItemId=3056632559&traceid=V0-143-72a4a71d73f4678a",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=142412365&itemId=6088507327&vendorItemId=3056632559&traceid=V0-143-72a4a71d73f4678a",
+        "image_url": "https://img4a.coupangcdn.com/image/retail/images/94761968167687-71f42b05-dc5e-4c35-8b00-fceda1c2809a.jpg"
+      },
+      {
+        "name": "[로켓프레시] 바다숲 한입에 쏙 구운감태",
+        "price": "8,990원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6642906081&itemId=15193196747&vendorItemId=82414371916&traceid=V0-143-3247947c45683498",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6642906081&itemId=15193196747&vendorItemId=82414371916&traceid=V0-143-3247947c45683498",
+        "image_url": "https://image14.coupangcdn.com/image/retail/images/5466219660688108-78244b76-df16-4064-b763-f0fbd1e1cbb0.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-05-06",
     "label": "5월 6일",
     "products": [
