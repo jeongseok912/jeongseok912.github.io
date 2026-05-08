@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-08",
+    "label": "5월 8일",
+    "products": [
+      {
+        "name": "파워에이드 마운틴블라스트",
+        "price": "22,420원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8157286425&itemId=20072566228&vendorItemId=3000415078&traceid=V0-143-41c0e706ad6363ca",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8157286425&itemId=20072566228&vendorItemId=3000415078&traceid=V0-143-41c0e706ad6363ca",
+        "image_url": "https://image3.coupangcdn.com/image/retail/images/36145048252261-5d1ae7f2-d59b-4194-baef-461793e3195b.jpg"
+      },
+      {
+        "name": "행복미트 돼지 통목살 부드럽고 맛좋은 왕목살 목전지 수욕 찜 국거리용",
+        "price": "23,180원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8147985725&itemId=23173902173&vendorItemId=90206625186&traceid=V0-143-450b69fff521b449",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8147985725&itemId=23173902173&vendorItemId=90206625186&traceid=V0-143-450b69fff521b449",
+        "image_url": "https://image11.coupangcdn.com/image/vendor_inventory/3c74/eaccab9323da4c3e064b387a9d8258aa977b14dd9fd6673a14fe45b3c3e7.jpg"
+      },
+      {
+        "name": "맥 글로우 플레이 텐더토크 립 밤",
+        "price": "29,070원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8314391571&itemId=25787715375&vendorItemId=92775543496&traceid=V0-143-d4346dc4993c50c7",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=8314391571&itemId=25787715375&vendorItemId=92775543496&traceid=V0-143-d4346dc4993c50c7",
+        "image_url": "https://img4c.coupangcdn.com/image/retail/images/2025/06/17/10/3/ac05daed-8845-49f3-a67c-1d26054df8bf.jpeg"
+      },
+      {
+        "name": "바나나 봉봉 사운드북:랄랄라 노래하는 아이스크림",
+        "price": "11,840원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=5421547121&itemId=8189883152&vendorItemId=75478017248&traceid=V0-143-82440bd378c37c47",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=5421547121&itemId=8189883152&vendorItemId=75478017248&traceid=V0-143-82440bd378c37c47",
+        "image_url": "https://image1.coupangcdn.com/image/1025_amir_coupang_oct_80k/1cc2/ca3e9397f2c0b4abc9bfc9d2e939a95b2a051eb83f36f0c6c88ad7f8c659.jpg"
+      },
+      {
+        "name": "푸드랩플러스 부채살 시즈닝 스테이크",
+        "price": "9,900원",
+        "affiliate_url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6559536717&itemId=14678203554&vendorItemId=81919202064&traceid=V0-143-cd368f5d3b7667e9",
+        "url": "https://link.coupang.com/re/AFFSDP?lptag=AF9557065&pageKey=6559536717&itemId=14678203554&vendorItemId=81919202064&traceid=V0-143-cd368f5d3b7667e9",
+        "image_url": "https://image6.coupangcdn.com/image/retail/images/306730986589725-cd8aa366-fbda-4736-9c1d-433de6fad72b.jpg"
+      }
+    ]
+  },
+  {
     "date": "2026-05-07",
     "label": "5월 7일",
     "products": [
